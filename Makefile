@@ -62,17 +62,17 @@ INCLUDES	:=	include \
 				$(EXT_LIBS)
 
 EXEFS_SRC    :=    exefs_src
-ROMFS        :=    game
+ROMFS        :=    $(NOGAMEDIR)
 
 #If we don't find the game, use No Game
-ifeq ($(wildcard $(CURDIR)/game/.*),)
-	ROMFS = $(NOGAMEDIR)
-endif
+#ifeq ($(wildcard $(CURDIR)/game/.*),)
+	#ROMFS = $(NOGAMEDIR)
+#endif
 
-APP_TITLE		:= Löve Potion
-APP_AUTHOR		:= TurtleP
+APP_TITLE		:= In Development
+APP_AUTHOR		:= Ill Teteka
 APP_VERSION		:= 1.0
-APP_TITLEID		:= 1043
+APP_TITLEID		:= 1088
 
 ICON        := meta/icon.jpg
 

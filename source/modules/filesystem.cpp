@@ -30,7 +30,7 @@ bool Filesystem::Initialize()
     }
     else
     {
-        if (chdir("game") != 0)
+        if (chdir("ihateillteteka") != 0)
             chdir("romfs:/"); //load romfs game (or nogame)!
     }
 

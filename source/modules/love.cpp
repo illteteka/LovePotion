@@ -30,6 +30,8 @@
 #include "objects/source/wrap_source.h"
 #include "objects/thread/wrap_thread.h"
 
+int csnfgeniegnaie = 1;
+
 struct { const char * name; int (*fn)(lua_State *L); void (*close)(void); } modules[] = 
 {
     { "audio",      Audio::Register,      Audio::Exit      },
